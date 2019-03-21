@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive viewport tag, tells small screens that it's responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CSS color Picker">
+	<title>Color Game</title>
+	<!-- jquery cdn mindfied -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+</script>
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<body>
+	<h1>
+		The Great 
+		<br>
+		<span id="colorDisplay">RGB</span> 
+		<br>
+		Color Game
+		<br>
+			<button  id="myBtn">Help!</button>
+	</h1>
+
+
+<!-- CHANGE THIS TO A NAV DROP DOWN MENU -->
+
+	<div id="stripe">
+				<button id="reset">New Colors</button>
+		<span id="message"></span>
+		<button class="mode">Easy</button>
+		<button class="mode selected">Hard</button>
+	</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Learn the CSS colors once and for all!</p>
+    <p>Choose any colored box to match it the RGB color!</p>
+  </div>
+
+</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
